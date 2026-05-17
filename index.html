@@ -3,31 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Zero's the beginning</title>
+    <title>ZeroG5</title> #Zero's the beggining
 </head>
 <body>
-    <img src="artemis.png" class="img">
+    <img src="img/artemis.png" class="img">
 
     <div class="content">
     </div>
 
    
     <div class="window" id="myWindow">
-        <div class="window-bar">
-            <span>Window</span>
-            <span>Astrophysics</span>
-            <span>Cybersecurity</span>
-            <span>Daily life</span>
+        <div class="window-bar" id="windowBar">
+            <div>
+                <button class="tab active" onclick="showTab('astro', this)">Astrophysics</button>
+                <button class="tab" onclick="showTab('cyber', this)">Cybersecurity</button>
+                <button class="tab" onclick="showTab('daily', this)">Daily life</button>
+                <button class="tab" onclick="showTab('projects', this)">Projects</button>
+                <button class="tab" onclick="showTab('updates', this)">Updates</button>
+            </div>
             <button class="close-button" onclick="closeWindow()">x</button>
         </div>
         <div class="window-content">
             <div class="left-sidebar">
-                <img src="sombrero.jpg">
+                <img src="img/sombrero.jpg">
                 <p>Hello, fellow user.</p>
                 <p>I'm ZeroG, a 15 year old student with too many interests.</p>
                 <p>My main interest fields are: astrophysics, cybersecurity, marine biology, aerospace engineering and many more...</p>
                 <p>If you'd like to talk about something interesting or collaborate on a project, you can contact me through discord: zerog_5 :)</p>
                 <p>By the way, this picture is M104, known as the Sombrero galaxy. It is situated in the Virgo constellation and can be visible during May, so if you're interested...</p>
+            </div>
+            <div class="main-content">
+            <div id="tab-astro" class="tab-content active">
+                <p>in progress</p>
+            </div>
+            <div id="tab-cyber" class="tab-content">
+                <img src="img/cybergame2026.png">
+                <p>Cybergame 2026 has officially ended. I must say that I'm pretty
+                    satisfied with my result. Last year I ended up in the top 130.
+                    So this year's goal was to break into the top 100. In the end I ended up <b>54th</b>,
+                    winning the Junior category. My goal was sucessfully reached. Nevertheless,
+                    there's always room for improvement.
+                </p>
+                <p>My worst category was the offensive security AKA webs.
+                   I really suck at them, even when I knew where the vulnerability was, I 
+                   struggled to craft a suitable exploit. So I hope that over the year I'll get
+                   better at them. 
+                </p>
+                <p>My favourite categories this year were cryptography (traditionally) and,
+                    surprisingly, malware analysis. Crypto has been my passion since 
+                    the beginning of my path in cybersecurity. I get lost a lot
+                    in the beautiful math behind the code. It's the perfection of the 
+                    universe - so precise and elegant. This year's tasks with elliptic curves were both brutal 
+                    and intriguing. It took me some time to get around them but in the 
+                    end I became obsessed. Eventually this began my whole project idea on which 
+                    I'm currently working.</p>
+                <p>On the other hand, malware analysis was pretty funny. I discovered
+                    that I love the kind of malware which can damage the PC externally (not
+                    sure if that's a good thing, but let's just continue). My virtual machines
+                    have suffered considerably in the name of science - they didn't sign up for that xd.
+                    Anyway I plan to continue working with the malware I got and eventually start modifying
+                    it and testing it on other kinds of hardware (everything in a secure environment and
+                    solely for educational purposes). So I guess this is going to become my
+                    new hobby. I hope my parents won't kill me lol.
+                </p>
+            </div>
+            <div id="tab-daily" class="tab-content">
+                <p>in progress</p>
+            </div>
+            <div id="tab-projects" class="tab-content">
+                <p>in progress</p>
+            </div>
+            <div id="tab-updates" class="tab-content">
+                <p>in progress</p>
+            </div>
             </div>
         </div>
 

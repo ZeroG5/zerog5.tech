@@ -82,13 +82,49 @@ body.macos   { background-color: #a10761; }
 }
 
 
+.tab {
+    background: none;
+    border: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.tab:hover {
+    text-decoration: underline;
+}
+
+
+.tab-content {
+    font-size: 11px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: none;
+    padding: 10px;
+
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.main-content {
+    flex: 1px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
 .window-content {
     padding: 7px 12px;
     letter-spacing: 1px;
     color: rgba(246, 246, 246, 0.8);
     font-size: 15px;
     font-family:'Times New Roman', Times, serif;
-
+    display: flex;
 }
 
 
@@ -117,7 +153,6 @@ body.macos   { background-color: #a10761; }
 
 
 .left-sidebar {
-    position: fixed;
     height: 800px;
     width: 160px;
     background: rgba(79, 9, 112, 0.233)
@@ -131,4 +166,16 @@ body.macos   { background-color: #a10761; }
     box-shadow: 0 0 6px rgba(163, 152, 152, 0.15);
     display: block;
     margin: auto;
+}
+
+#tab-cyber img {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    display: block;
+    margin: 8px auto;
+}
+
+#tab-cyber {
+    font-size: 15px;
 }
