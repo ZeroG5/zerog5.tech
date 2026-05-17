@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background-color: #010203;
+    background-image: radial-gradient(
+        circle at 71% 30%,
+        rgba(163, 152, 152, 0.15) 0%,
+        transparent 40%
+    );
+    background-repeat: no-repeat;
+}
+
+
+body.linux   { background-color: #000000; }
+body.windows { background-color: #1e56aa; }
+body.macos   { background-color: #a10761; }
+
+
+.button {
+    padding: 2px 7px;
+    cursor: pointer;
+    background-color: #040e55;
+    color: white;
+    border: 0.5px outset #f3edf3;
+    bottom: 2px;
+    position: fixed;
+
+}
+
+
+.img {
+    height: 120vh;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.window {
+    position: fixed;
+    top: 100px;
+    left: 60px;
+    width: 900px;
+    height: 800px;
+    background: transparent;
+    border-radius: 1px solid rgba(0, 2, 123, 0.619);
+    display: none;
+    clip-path: polygon(
+        0% 20px,
+        20px 0%,
+        100% 0%,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0% 100%
+    );
+    box-shadow:
+        0 0 8px rgba(146, 150, 177, 0.502),
+        inset 0 0 8px rgba(115, 188, 157, 0.05);
+    backdrop-filter: blur(4px);
+
+}
+
+
+.window-bar {
+    padding: 8px 12px;
+    background: rgba(160, 67, 214, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    cursor: grab;
+    border-bottom: 1px solid rgba(163, 5, 226, 0.485);
+    letter-spacing: 2px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.window-content {
+    padding: 7px 12px;
+    letter-spacing: 1px;
+    color: rgba(246, 246, 246, 0.8);
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+
+.close-button {
+    background: transparent;
+    border: 1px solid;
+    color: white;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bottom-bar {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+}
+
+
+.left-sidebar {
+    position: fixed;
+    height: 800px;
+    width: 160px;
+    background: rgba(79, 9, 112, 0.233)
+}
+
+.left-sidebar img {
+    width: 140px;
+    height: 134px;
+    border-radius: 2px;
+    border: 1px solid rgba(72, 3, 102, 0.619);
+    box-shadow: 0 0 6px rgba(163, 152, 152, 0.15);
+    display: block;
+    margin: auto;
+}
