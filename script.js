@@ -1,12 +1,12 @@
 const os = navigator.platform;
-let theme = "";
+const display = document.getElementById("os-display");
 
-if (os.includes("Linux"))    { theme = "linux"; }
-else if (os.includes("Win")) { theme = "windows"; }
-else if (os.includes("Mac")) { theme = "macos"; }
-else                         { theme = "unknown"; }
-
-document.body.classList.add(theme);
+if (display) {
+    if (os.includes("Linux"))         { display.textContent = "Linux"; }
+    else if (os.includes("Win"))      { display.textContent = "Windows"; }
+    else if (os.includes("Mac"))      { display.textContent = "MacOS"; }
+    else                              { display.textContent = "Unknown"; }
+}
 
 function openWindow() {
     document.getElementById("myWindow").style.display = "block";

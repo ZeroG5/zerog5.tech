@@ -15,11 +15,6 @@ body {
 }
 
 
-body.linux   { background-color: #000000; }
-body.windows { background-color: #1e56aa; }
-body.macos   { background-color: #a10761; }
-
-
 .button {
     padding: 2px 7px;
     cursor: pointer;
@@ -49,7 +44,7 @@ body.macos   { background-color: #a10761; }
     width: 900px;
     height: 800px;
     background: transparent;
-    border-radius: 1px solid rgba(0, 2, 123, 0.619);
+    border-radius: 1px solid rgba(1, 1, 90, 0.619);
     display: none;
     clip-path: polygon(
         0% 20px,
@@ -69,16 +64,16 @@ body.macos   { background-color: #a10761; }
 
 .window-bar {
     padding: 8px 12px;
-    background: rgba(160, 67, 214, 0.1);
     justify-content: space-between;
     align-items: center;
     display: flex;
     cursor: grab;
-    border-bottom: 1px solid rgba(163, 5, 226, 0.485);
     letter-spacing: 2px;
     font-size: 11px;
     text-transform: uppercase;
     color: white;
+    background: rgba(160, 67, 214, 0.1);
+    border-bottom: 1px solid rgba(163, 5, 226, 0.485);
 }
 
 
@@ -113,7 +108,7 @@ body.macos   { background-color: #a10761; }
 }
 
 .main-content {
-    flex: 1px;
+    flex: 1;
     padding: 10px;
     overflow-y: auto;
 }
