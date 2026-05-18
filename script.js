@@ -2,10 +2,10 @@ const os = navigator.platform;
 const display = document.getElementById("os-display");
 
 if (display) {
-    if (os.includes("Linux"))         { display.textContent = "Linux"; }
-    else if (os.includes("Win"))      { display.textContent = "Windows"; }
-    else if (os.includes("Mac"))      { display.textContent = "MacOS"; }
-    else                              { display.textContent = "Unknown"; }
+    if (os.includes("Linux"))         { display.textContent = "Welcome Linux user!"; }
+    else if (os.includes("Win"))      { display.textContent = "Welcome Windows user!"; }
+    else if (os.includes("Mac"))      { display.textContent = "Welcome MacOS user!"; }
+    else                              { display.textContent = "Welcome!"; }
 }
 
 function openWindow() {

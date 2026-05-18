@@ -21,11 +21,20 @@ body {
     background-color: #040e55;
     color: white;
     border: 0.5px outset #f3edf3;
-    bottom: 2px;
-    position: fixed;
-
+    margin-right: auto;
 }
 
+
+#os-display {
+    color: white;
+    font-size: 13px;
+    position: fixed;
+    bottom: 4px;
+    left: 1650px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 .img {
     height: 120vh;
@@ -144,6 +153,7 @@ body {
     height: 20px;
     width: 100%;
     display: flex;
+    align-items: center;
 }
 
 
@@ -163,12 +173,19 @@ body {
     margin: auto;
 }
 
-#tab-cyber img {
+.cybergame {
     height: 100px;
     width: auto;
     margin: auto;
     display: block;
     margin: 8px auto;
+}
+
+.themctf {
+    height: 200px;
+    width: auto;
+    margin: auto;
+    display: block;
 }
 
 #tab-cyber {
