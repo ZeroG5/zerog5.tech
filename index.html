@@ -69,14 +69,29 @@
                 </p>
                 <img src="img/themctf.png" class="themctf">
                 <p>
-                    On the 1st of May there was supposed to be a THEMCTF. Things got 
-                    pretty interesting in the end, but even in the beggining, we could
-                    all feel that something wasn't right. The email authentification 
-                    wasn't working properly, the server wasn't occasionally reponsive 
-                    and not even the admins knew what was going on. The CTF was alive
-                    for an hour and a half and then suddenly we were hit by a notice 
-                    that somebody else took over the server because of a docker 
-                    vulnerability: <a href="https://github.com/CTFd/CTFd/issues/3002"></a>
+                    On the 1st of May, THEMCTF was supposed to take place. Things got 
+                    interesting pretty quickly, even in the beginning, we could
+                    all feel that something wasn't right. The email authentication 
+                    wasn't working properly, the server was occasionally unreponsive 
+                    and even the admins weren't sure what was going on. The CTF was alive
+                    for about an hour and a half and then suddenly we were hit by a notice 
+                    that somebody else has taken over the server because of a 
+                    <a href="https://github.com/CTFd/CTFd/issues/3002">docker vulnerability</a>. 
+                    Unfortunately, this was a vuln in the CTFd platform itself so I assume that there were 
+                    other CTFs affected by this as well. I hope the next one is going to run smoother. 
+                    But at least I've got this one crossed off my bucket list, because this was
+                    certainly the shortest CTF I've ever participated in. 
+                </p>
+                <p>
+                    For those who are curious about the vulnerability, here's a quick explanation:
+                    Integer overflow could be performed in the sqlite3KeyInfoFromExprList function
+                    in SQLite versions 3.39.2 through 3.41.1. It allowed the attacker with the 
+                    ability to execute arbitrary SQL statements to cause denial of
+                    service or disclose sensitive information from process memory via a crafted SELECT
+                    statement with a large number of expressions in the ORDER BY clause. This happened because the logic 
+                    assumed the resulting value would always be larger than the original, but when the 
+                    integer exceeded its maximum value, it got wrapped around to a very small or even 
+                    negative number, that broke the assumption.
                 </p>
 
             </div>
