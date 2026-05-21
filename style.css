@@ -233,3 +233,21 @@ body {
     z-index: -5;
     opacity: 0.32;
 }
+
+.sun {
+    height: 200px;
+    width: auto;
+    margin: 8px auto;
+    display: block;
+}
+
+#tab-astro {
+    font-size: 15px;
+}
+
+.solar {
+    height: 120px;
+    width: 350px;
+    margin: 8px auto;
+    display: block;
+}
