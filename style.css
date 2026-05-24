@@ -234,7 +234,7 @@ body {
     opacity: 0.32;
 }
 
-.sun {
+.structure {
     height: 200px;
     width: auto;
     margin: 8px auto;
@@ -250,4 +250,19 @@ body {
     width: 350px;
     margin: 8px auto;
     display: block;
+}
+
+.sun_flare {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 200px;
+    width: auto;
+}
+
+.solar_wind {
+    display: block;
+    height: 200px;
+    width: auto;
+    margin: 8px auto;
 }
