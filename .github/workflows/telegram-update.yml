@@ -18,9 +18,7 @@ jobs:
           COMMIT_MSG: ${{ github.event.head_commit.message }}
           ACTOR: ${{ github.actor }}
         run: |
+          MSG="🚀 Website Updated%0ARepository: ${REPO}%0ACommit: ${COMMIT_MSG}%0ABy: ${ACTOR}"
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${CHAT_ID}" \
-            --data-urlencode "text=🚀 Website Updated
-Repository: ${REPO}
-Commit: ${COMMIT_MSG}
-By: ${ACTOR}"
+            -d "chat_id=${CHAT_ID}" \
+            -d "text=${MSG}"
