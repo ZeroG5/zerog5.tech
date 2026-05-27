@@ -14,12 +14,10 @@ jobs:
         run: |
           curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
           -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
-          -d text=" Website Updated
+          --data-urlencode "text=🚀 Website Updated
 
 Repository: ${{ github.repository }}
 
-Commit:
-${{ github.event.head_commit.message }}
+Commit: ${{ github.event.head_commit.message }}
 
-By:
-${{ github.actor }}"
+By: ${{ github.actor }}"
