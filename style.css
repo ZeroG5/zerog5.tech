@@ -266,3 +266,7 @@ body {
     width: auto;
     margin: 8px auto;
 }
+
+#tab-updates {
+    font-size: 15px;
+}
